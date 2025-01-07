@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>My Account</title>
+<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="main.css">
+<!-- change to match your file/naming structure -->
+<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<!-- change to match your file/naming structure -->
+</head>
+<body>
+	<div class="container">
+		
+	<div class="centered_header">
+		<div class="flex-3"><h1 class="eerie_glow" style="text-shadow: 2px 2px 5px black">Welcome to Hallowed Ground!</h1></div>
+        <div class="right_top_links_BAR">
+            <div class="navlink"><div class="button" ><a href="/home" onmouseover="eerieGlow(this)" onmouseout="removeGlow(this)">home</a></div></div>
+            <div class="navlink"><div class="button"><a href="/cart" onmouseover="eerieGlow(this)" onmouseout="removeGlow(this)">order (0)</a></div></div>
+            <div class="navlink"><div class="button"><div class="active"><a href="/account" onmouseover="eerieGlow(this)" onmouseout="removeGlow(this)">account</a></div></div></div>
+		<div class="navlink"><div class="button"><a href="/logout" onmouseover="eerieGlow(this)" onmouseout="removeGlow(this)">logout</a></div></div>
+        
+    </div>
+	</div>
+<div class="body_container">
+    <div class="form_container">
+        <div class="one_form">
+            
+            <!--<form:form action="/user" method="PUT" modelAttribute="existingUser">-->
+            <form class="one_forms_styling">
+                <h2 class="form_title"><span class="eerie_glow">Edit Account Info</span></h2>
+
+                <div class="form_field">
+                    <!--<form:label path="firstName">First Name: </form:label>
+                    <form:input path="firstName" name="firstName"></form:input>-->
+                    <div class="form_field_label">First Name:</div>
+                    <input class="form_field_input" />
+                </div>
+                <div class="error">
+                    <form:errors path="firstName" />
+                </div>
+
+                <div class="form_field">
+                    <!--<form:label path="lastName">Last Name: </form:label>
+                    <form:input path="lastName" name="lastName"></form:input>-->
+                    <div class="form_field_label">Last Name:</div>
+                    <input class="form_field_input"/>
+                </div>
+                <div class="error">
+                    <form:errors path="lastName" />
+                </div>
+
+                <div class="form_field">
+                    <!--<form:label path="email">Email: </form:label>
+
+                    <form:input path="email" name="email"></form:input>-->
+                    <div class="form_field_label">Email:</div>
+                    <input class="form_field_input"/>
+                </div>
+                <div class="error">
+                    <form:errors path="email" />
+                </div>
+                
+                <div class="form_field">
+                    
+                    <div class="form_field_label">Birthday:</div>
+                    <div class="form_field_input">10/15/2000</div>
+                </div>
+
+                <div class="form_field_submit">
+                    <button><div class="button">Update</div></button>
+                    
+                    
+                </div>
+                <!--</form:form>-->
+        </div>
+    </div>
+    
+    <div class="list_container">
+        <h2 class="list_title">Past Orders</h2>
+        <div class="one_order">
+            <div class="order_title">12/14/2024 </div>
+            <div class="order_bold_bar">
+                <div class="flex-2">
+                <div class="order_main_item">medium latte </div>
+                <ul><li class="order_details">oatmilk</li><li class="order_details">1 pump vanilla</li>
+                </ul></div>
+                <div class="flex-1"><div class="fav_box"><div class="fav_button"><form onSubmit="/user/fav"><button onmouseover="eerieGlow(this)" onmouseout="removeGlow(this)">make this my fav</button></form></div></div>
+            </div>
+                </div>
+            
+        </div>
+        <div class="one_order">
+            <div class="order_title">12/15/2024 </div>
+            <div class="order_bold_bar">
+                <div class="flex-2">
+                <div class="order_main_item">large latte </div>
+                <ul><li class="order_details">almond milk</li><li class="order_details">3 shots</li>
+                </ul></div>
+                <div class="flex-1"><div class="fav_box"><div class="fav_icon">⭐️</div></div></div>
+            </div>
+                </div>
+        </div>
+    </div>
+</div>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
+

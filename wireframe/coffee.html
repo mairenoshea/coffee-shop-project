@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hallowed Ground</title>
+<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="main.css">
+<!-- change to match your file/naming structure -->
+<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<!-- change to match your file/naming structure -->
+</head>
+<body>
+	<div class="container">
+		
+	<div class="centered_header">
+		<div class="flex-3"><h1 class="eerie_glow" style="text-shadow: 2px 2px 5px black">Welcome to Hallowed Ground!</h1></div>
+        <div class="right_top_links_BAR">
+            <div class="navlink"><div class="button" ><div class="active"><a href="/home" onmouseover="eerieGlow(this)" onmouseout="removeGlow(this)">home</a></div></div></div>
+            <div class="navlink"><div class="button"><a href="/cart" onmouseover="eerieGlow(this)" onmouseout="removeGlow(this)">order (0)</a></div></div>
+            <div class="navlink"><div class="button"><a href="/account_info" onmouseover="eerieGlow(this)" onmouseout="removeGlow(this)">account</a></div></div>
+		<div class="navlink"><div class="button"><a href="/logout" onmouseover="eerieGlow(this)" onmouseout="removeGlow(this)">logout</a></div></div>
+        
+    </div>
+	</div>
+	<div class="body_container">
+		<div class="menu_container">
+            <div class="menu_sidebar">
+                <h3>menu</h3>
+                <ul>
+				<li class="category_name"><span class="active">coffee</span></li>
+				<li class="category_name">tea</li>
+				<li class="category_name">other</li></ul>
+			</div>
+        <div class="card_container">
+			<div class="one_card">
+				<div class="emoji" onmouseover="eerieGlow(this)" onmouseout="removeGlow(this)"></div>
+            <h4 class="item_title">latte</h4>
+            <form onSubmit="/order/add">
+                <div class="select">
+                <select>
+                    <option>small - $4</option>
+                    <option>large - $5</option></select></div>
+                    <div class="fav_button"><button onmouseover="eerieGlow(this)" onmouseout="removeGlow(this)">customize</button></div>
+            <div class="button"><button onmouseover="eerieGlow(this)" onmouseout="removeGlow(this)">add to order</button></form></div>
+			
+			</div>
+
+			<div class="one_card">
+                <h4 class="item_title">cappuccino</h4>
+                <form onSubmit="/order/add">
+                    <div class="select">
+                    <select>
+                        <option>small - $3.5</option>
+                        <option>large - $4.5</option></select></div>
+                        <div class="fav_button"><button onmouseover="eerieGlow(this)" onmouseout="removeGlow(this)">customize</button></div>
+                <div class="button"><button onmouseover="eerieGlow(this)" onmouseout="removeGlow(this)">add to order</button></form></div>
+            
+			
+			</div>
+			
+		</div>
+	</div>
+   
+    </div>
+	</div>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
+

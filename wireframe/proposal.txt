@@ -1,0 +1,11 @@
+Proposal: Cafe Online Ordering Website 
+Stack: Java/Spring Boot
+Feature list: Users can register and log in to their accounts at the shop, view the menu, add items to their cart and customize items once added, favorite a drink, get a random drink, edit their account details, and view their past orders.
+Repo Link:
+https://github.com/mairenoshea/coffee-shop-project
+
+More features: 
+Admins can add drinks to menu and change the prices.
+Admins can add a customer's drink to be featured.
+Users can review drinks they have tried; all reviews fall under base drink ordered (i.e. latte).
+
